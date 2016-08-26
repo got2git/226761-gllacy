@@ -1,11 +1,33 @@
 body {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
     font-size: 16px;
     line-height: 18px;
     color: #fff;
     font-weight: normal;
     font-family: "Roboto", "Arial", sans-serif;
-    background-color: #849d8f;
-/*Добавил цвет фона, чтобы было видно белый шрифт*/
+    background-color: white;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    margin: 0 0 25px;
+    outline: 2px solid red;
+}
+
+footer {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    clear: both;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 h2 {
@@ -26,3 +48,380 @@ h4 {
     line-height: 22px;
     color: #323232;
 }
+
+body > input[type="checkbox"] {
+    display: none;price-tag
+}
+
+.container {
+    width: auto;
+    padding: 0 2.3%;
+    margin: 0 auto;
+    background: #849d8f;
+}
+
+.background-switch {
+    background: url("../img/ice-cream-slide-1.png") no-repeat #849d8f 50% 0;    
+}
+
+.nav-submenu {
+    display: none;
+}
+
+.slider {
+    margin: 83px 0 40px;
+}
+
+.slide {
+    display: none;
+    min-height: 449px;
+    text-align: center;
+}
+
+.slide:first-of-type {
+    display: block;
+    outline: 2px solid red;
+}
+
+.feedback-form {
+    display: none;
+}
+
+.header-block-left {
+    float: left;
+}
+
+.header-block-right {
+    float: right;
+    margin: 23px 0 18px;
+}
+
+.header-logo {
+    float: left;
+    margin: 10px 15px 0 -5px;
+    outline: 2px solid red;
+}
+
+.nav-menu {
+    float: left;
+    margin: 23px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 2px 0 0;
+    outline: 2px solid red;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 7px 13px;
+}
+
+.nav-menu li a {
+    display: block;
+    
+}
+
+.info {
+    position: absolute;
+    right: 0;
+    bottom: -61px;
+    text-align: right;
+    outline: 2px solid red;
+}
+
+.schedule {
+    display: block;
+    margin: 0 0 5px;
+}
+
+.login-form {
+    display: none;
+}
+
+.login {
+    float: left;
+    margin: 0 10px 0 0;
+    outline: 2px solid red;
+}
+
+.cart {
+    float: left;
+    outline: 2px solid red;
+}
+
+.search-form {
+    display: none;
+}
+
+.search {
+    float: left;
+    
+    margin: 0 10px 0 0;
+    outline: 2px solid red;
+}
+
+.slide-title {
+    display: block;
+    margin: 0 0 25px;
+}
+
+.slide-btn {
+    margin: 0 0 20px;
+}
+
+.offer-left {
+    float: left;
+    width: 48.85%;
+    min-height: 230px;
+    outline: 2px solid red;
+}
+
+.offer-right {
+    float: right;
+    width: 48.85%;
+    min-height: 230px;
+    outline: 2px solid red;
+}
+
+.special-offers {
+    margin: 0 0 40px;
+}
+
+.products {
+    margin: 0 0 40px;
+    padding: 0;
+    list-style: none;
+    outline: 2px solid red;
+}
+
+.products p {
+    margin-bottom: 0;
+}
+
+.products li {
+    display: inline-block;
+    width: 23.3%;
+    margin: 0 2.3% 0 0;
+    vertical-align: top;
+}
+
+.products li:not(:nth-child(4n+1)) {
+    margin-left: -5px;
+}
+
+.products li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.product-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-photo {
+    position: relative;
+}
+
+
+
+.gllacy-promo {
+    margin: 0 0 40px;
+    outline: 2px solid red;
+}
+
+.promo-entry {
+    float: left;
+    width: 48.8%;
+    margin: 0 0 25px;
+}
+
+.promo-entry:nth-of-type(odd) {
+    margin-right: 2.3%;
+}
+
+.blog-news {
+    float: left;
+    width: 48.85%;
+    min-height: 230px;
+    outline: 2px solid red;
+}
+
+.newsletter {
+    float: right;
+    width: 48.85%;
+    min-height: 230px;
+    outline: 2px solid red;
+}
+
+
+
+.contacts-map {
+    position: absolute;
+    height: 100%;
+    left: -2.4%;
+    width: 1200px;
+    background: url("../img/ya-map.jpeg") no-repeat 0 0;
+}
+
+.blog-and-newsletter {
+    margin: 0 0 40px;
+}
+
+.contacts {
+    position: relative;
+    min-height: 430px;
+    width: 100%;
+}
+
+.contacts-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footer-social {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin: 0 12px 0 0;
+    outline: 2px solid red;
+}
+
+.footer-details {
+    display: inline-block;
+    outline: 2px solid red;
+}
+
+.footer-details a {
+    display: block;
+}
+
+.footer-details-left {
+    float: left;
+    text-align: left;
+    padding: 0 0 0 22px;
+}
+
+.footer-details-right {
+    float: right;
+    text-align: left;
+    padding: 0 0 0 32px;
+}
+
+.footer-copyright {
+    float: right;
+    outline: 2px solid red;
+}
+
+.copyright-image {
+    margin-bottom: 8px;
+}
+
+.footer-copyright p {
+    margin-top: 0;
+}
+
+.search-link {
+    display: block;
+    text-align: center;
+    line-height: 33px;
+    width: 32px;
+    height: 32px;
+}
+
+.login-link {
+    display: block;
+    padding: 7px 16px 7px 43px;
+}
+
+.cart-link {
+    display: block;
+    padding: 7px 34px 7px 43px;
+}
+
+.cart-popup {
+    display: none;
+}
+
+.breadcrumbs {
+    max-width: 600px;
+    margin: 0 0 6px;
+    outline: 2px solid red;
+}
+
+.page-title {
+    margin: 0 0 26px;
+    max-width: 600px;
+    outline: 2px solid red;
+}
+
+.filter {
+    width: 900px;
+    margin: 0 0 34px;
+    outline: 2px solid red;
+}
+
+.filter fieldset {
+/*    float: left;*/
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 15px;
+}
+
+.pagination {
+    float: right;
+    margin: 104px 0 30px;
+    outline: 2px solid red;
+}
+
+.pagination a {
+    display: inline-block;
+    line-height: 26px;
+}
+
+.price-tag {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+    vertical-align: bottom;
+}
+
+.price-tag span {
+    font-size: 45px;
+}
+
+.price-tag img {
+    width: 32px;
+    margin: 0 0 4px 3px;
+    vertical-align: middle;
+}
+
+
+
+
+
+legend {
+    border: 0 none;
+}
+
+

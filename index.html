@@ -5,19 +5,20 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Gllacy</title>
     </head>
-    <body class="background-switch">
+    <body>
         <input type="checkbox" id="slide-1" name="toggle" checked>
         <input type="checkbox" id="slide-2" name="toggle">
         <input type="checkbox" id="slide-3" name="toggle">
         
-        <header class="container">
+    <div class="container background-switch">
+        <header class="clearfix">
             <nav class="header-block-left">
                 <div class="header-logo">
                     <img src="img/logo-header.svg" width="154" height="64" alt="Магазин «Глейси»">
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#">Каталог</a>
-                        <ul clas="nav-submenu">
+                    <li><a href="catalog.html">Каталог</a>
+                        <ul class="nav-submenu">
                             <li><a class="nav-submenu-title">Новинки</a></li>
                             <li><a href="catalog.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
@@ -32,13 +33,13 @@
             
             <div class="header-block-right">
                 <div class="search">
-                    <a class="search-link" href="#"></a>
+                    <a class="search-link" href="#">П</a>
                     <form class="search-form" action="#" method="get">
                         <input type="text" name="search" placeholder="Что ищем?">
                     </form>
                 </div>
                 <div class="login">
-                    <a class="btn" href="#">Вход</a>
+                    <a class="login-link btn" href="#">Вход</a>
                     <form class="login-form" action="#" method="get">
                         <input type="email" name="email" placeholder="Электронная почта">
                         <input type="password" name="password" placeholder="Пароль">
@@ -61,7 +62,7 @@
             </div>
         </header>
         
-        <main class="container">
+        <main>
             <div class="slider">
                 <div class="slider-controls">
                     <label for="slide-1"></label>
@@ -69,23 +70,20 @@
                     <label for="slide-3"></label>
                 </div>
                 <section class="slide slide-1">
-                    <img src="img/ice-cream-slide-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
                     <b class="slide-title">Крем-брюле и пломбир с малиновым джемом</b>
-                    <a class="btn" href="#">Давайте оба!</a>
+                    <a class="slide-btn btn" href="#">Давайте оба!</a>
                 </section>
                 <section class="slide slide-2">
-                    <img src="img/ice-cream-slide-2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
                     <b class="slide-title">Шоколадный пломбир и лимонный сорбет</b>
-                    <a class="btn" href="#">Давайте оба!</a>
+                    <a class="slide-btn btn" href="#">Давайте оба!</a>
                 </section>
                 <section class="slide slide-3">
-                    <img src="img/ice-cream-slide-3.png" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
                     <b class="slide-title">Пломбир с помадкой и клубничный щербет</b>
-                    <a class="btn" href="#">Давайте оба!</a>
+                    <a class="slide-btn btn" href="#">Давайте оба!</a>
                 </section>
             </div>
             
-            <div class="special-offers">
+            <div class="special-offers clearfix">
                 <section class="offer-left">
                     <h2>Малинка даром!</h2>
                     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -102,11 +100,11 @@
                 <li>
                     <div class="product-content">
                         <div class="product-photo">
-                            <a href="#"><img src="img/ice-cream-1.png" height="267" width="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+                            <a href="#"><img src="img/ice-cream-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
                             <div class="hit">
                                 <a href="#"><img src="img/hit.png" height="61" alt="Хит"></a>
                             </div>
-                            <span>310 &#8381; / кг</span>
+                            <p class="price-tag"><span>310<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
                         <p><a class="product-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
                     </div>
@@ -118,7 +116,7 @@
                             <div class="hit">
                                 <a href="#"><img src="img/hit.png" height="61" alt="Хит"></a>
                             </div>
-                            <span>380 &#8381; / кг</span>
+                            <p class="price-tag"><span>380<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
                         <p><a class="product-title" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
                     </div>
@@ -130,7 +128,7 @@
                             <div class="hit">
                                 <a href="#"><img src="img/hit.png" height="61" alt="Хит"></a>
                             </div>
-                            <span>355 &#8381; / кг</span>
+                            <p class="price-tag"><span>355<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
                         <p><a class="product-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
                     </div>
@@ -142,22 +140,22 @@
                             <div class="hit">
                                 <a href="#"><img src="img/hit.png" height="61" alt="Хит"></a>
                             </div>
-                            <span>415 &#8381; / кг</span>
+                            <p class="price-tag"><span>415<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
                         <p><a class="product-title" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
                     </div>
                 </li>
             </ul>
             
-            <section class="gllacy-promo">
+            <section class="gllacy-promo clearfix">
                 <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
                     <p class="promo-entry">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                    <p class="promo-entry">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
                     <p class="promo-entry">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                    <p class="promo-entry">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
                     <p class="promo-entry">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
             </section>
             
-            <div class="blog-and-newsletter">
+            <div class="blog-and-newsletter clearfix">
                 <section class="blog-news">
                     <p>Новое в нашем блоге</p>
                     <h4><a class="blog-news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a></h4>
@@ -196,12 +194,12 @@
             </div>
         </section>
         
-        <footer class="container">
+        <footer class="clearfix">
             <ul class="footer-social">
-                <li><a class="social-btn social-btn-tw" href="#">Твиттер</a></li>
-                <li><a class="social-btn social-btn-ig" href="#">Инстаграм</a></li>
-                <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-                <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+                <li><a class="social-btn social-btn-tw" href="#">Т</a></li>
+                <li><a class="social-btn social-btn-ig" href="#">И</a></li>
+                <li><a class="social-btn social-btn-fb" href="#">Ф</a></li>
+                <li><a class="social-btn social-btn-vk" href="#">В</a></li>
             </ul>
             
             <div class="footer-details">
@@ -222,6 +220,7 @@
                 <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &#169; 2016</p>
             </div>
         </footer>
+    </div>
     
     </body>
 </html>
