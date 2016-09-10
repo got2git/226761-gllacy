@@ -998,7 +998,6 @@ a.slide-btn {
     height: 100%;
 }
 
-
 .product-photo img {
     width: 100%;
     height: auto;
@@ -1009,9 +1008,11 @@ a.slide-btn {
 }
 
 a.product-title {
+    display: inline-block;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
+    vertical-align: top;
 }
 
 .hit {
