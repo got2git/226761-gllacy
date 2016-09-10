@@ -1500,6 +1500,7 @@ a.social-btn-vk {
 
 .sort-by-type-list {
     max-width: 210px;
+    margin: 0;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.3;
@@ -1545,7 +1546,7 @@ a.social-btn-vk {
     position: relative;
     width: 195px;
     border: none;
-    height: 36px;
+    height: 37px;
     padding: 0 15px;
     background: rgba(255, 255, 255, 0.25);
     border-radius: 20px;
