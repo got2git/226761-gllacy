@@ -6,9 +6,9 @@
     <title>Gllacy</title>
     </head>
     <body>
-        <input type="checkbox" id="slide-1" name="toggle" checked>
-        <input type="checkbox" id="slide-2" name="toggle">
-        <input type="checkbox" id="slide-3" name="toggle">
+        <input type="radio" id="slide-1" name="toggle" checked>
+        <input type="radio" id="slide-2" name="toggle">
+        <input type="radio" id="slide-3" name="toggle">
         
     <div class="container background-switch">
         <header class="clearfix">
@@ -17,7 +17,7 @@
                     <img src="img/logo-header.svg" width="154" height="64" alt="Магазин «Глейси»">
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="catalog.html">Каталог</a>
+                    <li><a href="#">Каталог</a>
                         <ul class="nav-submenu">
                             <li><a class="nav-submenu-title">Новинки</a></li>
                             <li><a href="catalog.html">Сливочное</a></li>
@@ -27,7 +27,7 @@
                         </ul>
                     </li>
                     <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">О Компании</a></li>
                 </ul>
             </nav>
             
@@ -39,12 +39,12 @@
                     </form>
                 </div>
                 <div class="login">
-                    <a class="login-link btn" href="#">Вход</a>
+                    <a class="login-link" href="#">Вход</a>
                     <form class="login-form" action="#" method="get">
                         <input type="email" name="email" placeholder="Электронная почта">
                         <input type="password" name="password" placeholder="Пароль">
-                        <div class="login-form-actions">
-                            <button name="submit">Войти</button>
+                        <div class="login-form-actions clearfix">
+                            <button class="btn" name="submit">Войти</button>
                             <div class="login-form-links">
                                 <a href="#">Забыли пароль?</a>
                                 <a href="#">Новая регистрация</a>
@@ -106,7 +106,7 @@
                             </div>
                             <p class="price-tag"><span>310<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
-                        <p><a class="product-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+                        <p><a class="product-title" href="#"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a></p>
                     </div>
                 </li>
                 <li>
@@ -118,7 +118,7 @@
                             </div>
                             <p class="price-tag"><span>380<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
-                        <p><a class="product-title" href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+                        <p><a class="product-title" href="#"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></a></p>
                     </div>
                 </li>
                 <li>
@@ -130,7 +130,7 @@
                             </div>
                             <p class="price-tag"><span>355<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
-                        <p><a class="product-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+                        <p><a class="product-title" href="#"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></a></p>
                     </div>
                 </li>
                 <li>
@@ -142,7 +142,7 @@
                             </div>
                             <p class="price-tag"><span>415<img src="img/icon-rub.svg" width="32" height="37"></span> / кг</p>
                         </div>
-                        <p><a class="product-title" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+                        <p><a class="product-title" href="#"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></a></p>
                     </div>
                 </li>
             </ul>
@@ -160,13 +160,15 @@
                     <p>Новое в нашем блоге</p>
                     <h4><a class="blog-news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a></h4>
                 </section>
-                <section class="newsletter">
-                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-                    <div class="newsletter-form">
-                        <form action="#" method="post">
-                            <input type="email" name="email" id="email" placeholder="Электронная почта">
-                            <button class="btn" name="subscribe">Отправить</button>
-                        </form>
+                <section class="newsletter-wrapper">
+                    <div class="newsletter">
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                        <div class="newsletter-form">
+                            <form action="#" method="post">
+                                <input type="email" name="email" id="email" placeholder="Электронная почта">
+                                <button class="btn" name="subscribe">Отправить</button>
+                            </form>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -176,10 +178,10 @@
             <div class="contacts-map"></div>
             <div class="contacts-info">
                 <p>Адрес главного офиса и<br>офлайн-магазина</p>
-                <p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+                <p><b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b></p>
                 <p>Для заказов по телефону:</p>
-                <a class="contacts-tel" href="tel:+78124502525">8 812 450-25-25</a>
-                <p>С 10 до 20 ежедневно</p>
+                <a class="tel" href="tel:+78124502525">8 812 450-25-25</a>
+                <p>(с 10 до 20 ежедневно)</p>
                 <a class="btn" href="#">Форма обратной связи</a>
             </div>
             <div class="feedback-form">
@@ -196,10 +198,10 @@
         
         <footer class="clearfix">
             <ul class="footer-social">
-                <li><a class="social-btn social-btn-tw" href="#">Т</a></li>
-                <li><a class="social-btn social-btn-ig" href="#">И</a></li>
-                <li><a class="social-btn social-btn-fb" href="#">Ф</a></li>
-                <li><a class="social-btn social-btn-vk" href="#">В</a></li>
+                <li><a class="social-btn-tw" href="#">Т</a></li>
+                <li><a class="social-btn-ig" href="#">И</a></li>
+                <li><a class="social-btn-fb" href="#">Ф</a></li>
+                <li><a class="social-btn-vk" href="#">В</a></li>
             </ul>
             
             <div class="footer-details">
