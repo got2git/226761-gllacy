@@ -951,7 +951,6 @@ a.slide-btn {
 }
 
 .products {
-    margin: 0 0 65px;
     padding: 0;
     font-size: 0;
     list-style: none;
@@ -1793,7 +1792,7 @@ a.social-btn-vk {
 
 .pagination {
     float: right;
-    margin: 0px 0 30px;
+    margin: 65px 0 30px;
     font-size: 0;
 }
 
