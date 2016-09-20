@@ -124,7 +124,7 @@ h4 {
     text-decoration: none;
     border: none;
     border-radius: 40px;
-    background: #ed5a3d linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    background: #ed5a3d linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     outline: none;
     cursor: pointer;
@@ -1223,11 +1223,11 @@ a.blog-news-link::after {
 }
 
 .feedback-form {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: block;
     padding: 18px 24px 27px;
     background: #f8f7f4;
     border-radius: 10px;
@@ -1308,7 +1308,7 @@ a.blog-news-link::after {
 }
 
 .feedback-form-overlay {
-/*    display: none;*/
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
