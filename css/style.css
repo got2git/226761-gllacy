@@ -398,7 +398,9 @@ a.search-link {
 
 .search-form input::-webkit-input-placeholder,
 .login-form input::-webkit-input-placeholder,
-.newsletter-form input::-webkit-input-placeholder {
+.newsletter-form input::-webkit-input-placeholder,
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 24px;
     font-family: Roboto, Arial, sans-serif;
@@ -407,7 +409,9 @@ a.search-link {
 
 .search-form input:-moz-placeholder,
 .login-form input:-moz-placeholder,
-.newsletter-form input:-moz-placeholder {
+.newsletter-form input:-moz-placeholder,
+.feedback-form input:-moz-placeholder,
+.feedback-form textarea:-moz-placeholder{
     font-size: 14px;
     line-height: 24px;
     font-family: Roboto, Arial, sans-serif;
@@ -416,7 +420,9 @@ a.search-link {
 
 .search-form input:-ms-input-placeholder,
 .login-form input:-ms-input-placeholder,
-.newsletter-form input:-ms-input-placeholder{
+.newsletter-form input:-ms-input-placeholder,
+.feedback-form input:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
     font-size: 14px;
     line-height: 24px;
     font-family: Roboto, Arial, sans-serif;
@@ -430,13 +436,17 @@ a.search-link {
 
 .search-form input:hover,
 .login-form input:hover,
-.newsletter-form input:hover {
+.newsletter-form input:hover,
+.feedback-form input:hover,
+.feedback-form textarea:hover {
     box-shadow: 0 0 0 2px #c7c6c5;
 }
 
 .search-form input:focus,
 .login-form input:focus,
-.newsletter-form input:focus {
+.newsletter-form input:focus,
+.feedback-form input:focus,
+.feedback-form textarea:focus {
     box-shadow: 0 0 0 2px #8fbdec;
 }
 
@@ -1177,7 +1187,7 @@ a.blog-news-link::after {
     transform: translateY(-50%);
     padding: 31px 25px;
     color: #323232;
-    background: #fff;
+    background: #fefefe;
     border-radius: 15px;
 }
 
@@ -1208,12 +1218,104 @@ a.blog-news-link::after {
 }
 
 .contacts-info .btn {
-    color: #fff;
     margin: 0;
+    color: #fff;
 }
 
 .feedback-form {
-    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    padding: 18px 24px 27px;
+    background: #f8f7f4;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.feedback-form p {
+    margin: 0 0 18px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #323232;
+}
+
+.feedback-form-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.feedback-form-close::before,
+.feedback-form-close::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    border-radius: 1px;
+}
+
+.feedback-form-close::before {
+    transform: rotate(45deg);
+}
+
+.feedback-form-close::after {
+    transform: rotate(-45deg);
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 265px;
+    padding: 13px 15px;
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #d3d3d2;
+    color: #000;
+    outline: none;
+}
+
+.feedback-form textarea {
+    display: block;
+    width: 426px;
+    height: 153px;
+    margin: 0 0 25px;
+}
+
+.feedback-form .btn {
+    float: right;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.feedback-form-overlay {
+/*    display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 5;
 }
 
 .footer-social {
